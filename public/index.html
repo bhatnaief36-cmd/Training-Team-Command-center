@@ -41,7 +41,7 @@ input,select,textarea,button{font-family:var(--font)}
 .landing-left{flex:1;background:linear-gradient(145deg,#00C07F 0%,#00855A 55%,#005C3F 100%);display:flex;flex-direction:column;justify-content:space-between;padding:52px 56px;position:relative;overflow:hidden}
 .landing-left::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
 .landing-brand{position:relative}
-.ll-logo{font-family:var(--font);font-weight:900;font-size:52px;color:#fff;letter-spacing:-2px;line-height:1;margin-bottom:8px}
+.ll-logo{margin-bottom:8px;line-height:1}.ll-logo svg{width:140px;height:auto;display:block}
 .ll-sub{font-size:13px;color:rgba(255,255,255,.7);font-weight:400;letter-spacing:.04em;text-transform:uppercase}
 .ll-tagline{position:relative}
 .ll-headline{font-size:38px;font-weight:900;color:#fff;line-height:1.1;letter-spacing:-.5px;margin-bottom:16px}
@@ -77,7 +77,7 @@ input,select,textarea,button{font-family:var(--font)}
 /* ── HEADER ── */
 #hdr{height:var(--hh);background:var(--bg);border-bottom:1px solid var(--border);position:fixed;top:0;left:0;right:0;z-index:800;display:flex;align-items:center;justify-content:space-between;padding:0 20px 0 calc(var(--sw) + 16px)}
 .hbrand{display:flex;align-items:center;gap:10px}
-.hcalo{font-family:var(--font);font-weight:900;font-size:22px;color:var(--green);letter-spacing:-0.5px}
+.hcalo{display:flex;align-items:center}.hcalo svg{width:52px;height:auto;display:block}
 .hbrand-sep{width:1px;height:22px;background:var(--border);margin:0 4px}
 .hbrand-title{font-size:13px;font-weight:700;color:var(--tx1)}
 .hbrand-sub{font-size:10px;font-weight:400;color:var(--tx3);margin-top:1px;letter-spacing:.04em}
@@ -368,7 +368,7 @@ input,select,textarea,button{font-family:var(--font)}
   <!-- Left: Calo branding -->
   <div class="landing-left">
     <div class="landing-brand">
-      <div class="ll-logo">CALO</div>
+      <div class="ll-logo"><svg viewBox="0 0 746 320" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M89.2,299.5c-18.1,0-33.5-6.3-46.1-19s-18.9-28-18.9-46v-149c0-18,6.4-33.4,19.1-46c12.7-12.7,28.1-19,45.9-19c18.1,0,33.4,6.4,46,19.1c12.6,12.7,18.9,28,18.9,46v31h-42.5V84.8c0-6.6-2.3-12.2-6.9-16.8s-10.2-6.9-16.8-6.9c-6.5,0-12,2.3-16.6,6.9c-4.6,4.6-6.9,10.2-6.9,16.8v149.4c0,6.6,2.3,12.1,6.9,16.7c4.6,4.6,10.1,6.9,16.6,6.9c6.6,0,12.2-2.3,16.8-6.9s6.9-10.2,6.9-16.7v-37.5h42.5v37.9c0,18.1-6.4,33.5-19.1,46C122.3,293.2,107,299.5,89.2,299.5z"/><path fill="#ffffff" d="M260.7,233.5l-10,62.5h-42.7l46.1-272.1h56.5l45.5,272.1h-43l-9.7-62.5H260.7z M282.2,86.3L267,193.6h30.4L282.2,86.3z"/><path fill="#ffffff" d="M533.3,296.1H421.4V23.9h41v231.4h70.9L533.3,296.1L533.3,296.1z"/><path fill="#ffffff" d="M656.7,20.6c18.1,0,33.5,6.4,46.2,19.1s19,28.1,19,46.1v148.4c0,18.1-6.4,33.5-19.1,46.2c-12.7,12.7-28.1,19-46.1,19s-33.3-6.4-45.9-19.1c-12.6-12.7-18.9-28.1-18.9-46.1V85.9c0-18.1,6.4-33.5,19.1-46.2C623.7,27,639,20.6,656.7,20.6z M679,85.1c0-6.6-2.3-12.1-6.8-16.6c-4.5-4.5-10.1-6.8-16.6-6.8c-6.5,0-12,2.3-16.6,6.8S632,78.5,632,85.1V234c0,6.5,2.3,12,6.9,16.5s10.2,6.9,16.6,6.9c6.6,0,12.1-2.3,16.6-6.9c4.5-4.6,6.8-10.1,6.8-16.5V85.1z"/></svg></div>
       <div class="ll-sub">Training Command Center</div>
     </div>
     <div class="ll-tagline">
@@ -553,7 +553,7 @@ input,select,textarea,button{font-family:var(--font)}
 <!-- HEADER -->
 <header id="hdr">
   <div class="hbrand">
-    <div class="hcalo">CALO</div>
+    <div class="hcalo"><svg viewBox="0 0 746 320" xmlns="http://www.w3.org/2000/svg"><path fill="#00C07F" d="M89.2,299.5c-18.1,0-33.5-6.3-46.1-19s-18.9-28-18.9-46v-149c0-18,6.4-33.4,19.1-46c12.7-12.7,28.1-19,45.9-19c18.1,0,33.4,6.4,46,19.1c12.6,12.7,18.9,28,18.9,46v31h-42.5V84.8c0-6.6-2.3-12.2-6.9-16.8s-10.2-6.9-16.8-6.9c-6.5,0-12,2.3-16.6,6.9c-4.6,4.6-6.9,10.2-6.9,16.8v149.4c0,6.6,2.3,12.1,6.9,16.7c4.6,4.6,10.1,6.9,16.6,6.9c6.6,0,12.2-2.3,16.8-6.9s6.9-10.2,6.9-16.7v-37.5h42.5v37.9c0,18.1-6.4,33.5-19.1,46C122.3,293.2,107,299.5,89.2,299.5z"/><path fill="#00C07F" d="M260.7,233.5l-10,62.5h-42.7l46.1-272.1h56.5l45.5,272.1h-43l-9.7-62.5H260.7z M282.2,86.3L267,193.6h30.4L282.2,86.3z"/><path fill="#00C07F" d="M533.3,296.1H421.4V23.9h41v231.4h70.9L533.3,296.1L533.3,296.1z"/><path fill="#00C07F" d="M656.7,20.6c18.1,0,33.5,6.4,46.2,19.1s19,28.1,19,46.1v148.4c0,18.1-6.4,33.5-19.1,46.2c-12.7,12.7-28.1,19-46.1,19s-33.3-6.4-45.9-19.1c-12.6-12.7-18.9-28.1-18.9-46.1V85.9c0-18.1,6.4-33.5,19.1-46.2C623.7,27,639,20.6,656.7,20.6z M679,85.1c0-6.6-2.3-12.1-6.8-16.6c-4.5-4.5-10.1-6.8-16.6-6.8c-6.5,0-12,2.3-16.6,6.8S632,78.5,632,85.1V234c0,6.5,2.3,12,6.9,16.5s10.2,6.9,16.6,6.9c6.6,0,12.1-2.3,16.6-6.9c4.5-4.6,6.8-10.1,6.8-16.5V85.1z"/></svg></div>
     <div class="hbrand-sep"></div>
     <div>
       <div class="hbrand-title">Training Command Center</div>
@@ -919,7 +919,7 @@ input,select,textarea,button{font-family:var(--font)}
 
 <header style="height:var(--hh);background:var(--bg);border-bottom:1px solid var(--border);position:fixed;top:0;left:0;right:0;z-index:800;display:flex;align-items:center;justify-content:space-between;padding:0 24px">
   <div class="hbrand">
-    <div class="hcalo">CALO</div>
+    <div class="hcalo"><svg viewBox="0 0 746 320" xmlns="http://www.w3.org/2000/svg"><path fill="#00C07F" d="M89.2,299.5c-18.1,0-33.5-6.3-46.1-19s-18.9-28-18.9-46v-149c0-18,6.4-33.4,19.1-46c12.7-12.7,28.1-19,45.9-19c18.1,0,33.4,6.4,46,19.1c12.6,12.7,18.9,28,18.9,46v31h-42.5V84.8c0-6.6-2.3-12.2-6.9-16.8s-10.2-6.9-16.8-6.9c-6.5,0-12,2.3-16.6,6.9c-4.6,4.6-6.9,10.2-6.9,16.8v149.4c0,6.6,2.3,12.1,6.9,16.7c4.6,4.6,10.1,6.9,16.6,6.9c6.6,0,12.2-2.3,16.8-6.9s6.9-10.2,6.9-16.7v-37.5h42.5v37.9c0,18.1-6.4,33.5-19.1,46C122.3,293.2,107,299.5,89.2,299.5z"/><path fill="#00C07F" d="M260.7,233.5l-10,62.5h-42.7l46.1-272.1h56.5l45.5,272.1h-43l-9.7-62.5H260.7z M282.2,86.3L267,193.6h30.4L282.2,86.3z"/><path fill="#00C07F" d="M533.3,296.1H421.4V23.9h41v231.4h70.9L533.3,296.1L533.3,296.1z"/><path fill="#00C07F" d="M656.7,20.6c18.1,0,33.5,6.4,46.2,19.1s19,28.1,19,46.1v148.4c0,18.1-6.4,33.5-19.1,46.2c-12.7,12.7-28.1,19-46.1,19s-33.3-6.4-45.9-19.1c-12.6-12.7-18.9-28.1-18.9-46.1V85.9c0-18.1,6.4-33.5,19.1-46.2C623.7,27,639,20.6,656.7,20.6z M679,85.1c0-6.6-2.3-12.1-6.8-16.6c-4.5-4.5-10.1-6.8-16.6-6.8c-6.5,0-12,2.3-16.6,6.8S632,78.5,632,85.1V234c0,6.5,2.3,12,6.9,16.5s10.2,6.9,16.6,6.9c6.6,0,12.1-2.3,16.6-6.9c4.5-4.6,6.8-10.1,6.8-16.5V85.1z"/></svg></div>
     <div class="hbrand-sep"></div>
     <div><div class="hbrand-title" id="coord-mp-title">My Training Dashboard</div><div class="hbrand-sub" id="coord-mp-sub">Training Coordinator · 2026</div></div>
   </div>
