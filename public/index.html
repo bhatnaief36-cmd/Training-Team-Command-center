@@ -2171,7 +2171,7 @@ function openAddUser(){['uf-name','uf-email','uf-pw'].forEach(id=>ge(id).value='
 async function submitUser(){
   const nm=ge('uf-name').value.trim(),em=ge('uf-email').value.trim(),pw=ge('uf-pw').value.trim();ge('user-err').textContent='';
   if(!nm||!em){ge('user-err').textContent='Name and email are required.';return;}
-  const r=await api('createUser',{payload:{name:nm,email:em,role:ge('uf-role').value,country:ge('uf-country').value,tempPassword:pw||undefined}});
+  const r=await api('createUser',{payload:{name:nm,email:em,role:ge('uf-role').value,country:ge('uf-country').value,tempPassword:pw||undefined,mustChangePassword:pw?false:true}});
   if(!r){toast('Could not create user','e');return;}if(r.error){ge('user-err').textContent=r.error;return;}
   toast(`✅ User created! Temp PW: ${r.tempPassword}`,'s');closeModal('user-modal');rTeam();
 }
